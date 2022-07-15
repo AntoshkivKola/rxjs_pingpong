@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Search</title>
+    <style>
+        .container {
+            width: 100vw;
+            max-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .play-field {
+            width: 1800px;
+            height: 700px;
+            background-color: #7f7f7f;
+            border: 2px solid black;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ball {
+            background-color: black;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .racket {
+            width: 25px;
+            height: 200px;
+            background-color: black;
+            position: relative;
+        }
+
+        .score-container {
+            display: flex;
+            width: 400px;
+            height: 150px;
+            align-items: center;
+            justify-content: space-between;
+
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Helvetica",serif
+        }
+
+        .score-title-player-1 {
+            color: #0f0ff5;
+        }
+
+        .flex-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .score-title-player-2 {
+            color: #e70909;
+        }
+        .player-1 {
+            background-color: #0f0ff5;
+        }
+
+        .player-2 {
+            background-color: #e70909;
+        }
+
+        .start-button {
+            width: 150px;
+            height: 50px;
+
+            cursor: pointer;
+
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Helvetica",serif
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="score-container">
+
+        <div class="score-title-player-1 flex-center">Player One
+            <br />
+            <span class="score player-1-score">0</span>
+        </div>
+        <button class="start-button">Start</button>
+        <div class="score-title-player-2 flex-center">Player Two
+            <br />
+            <span class="score player-2-score">0</span>
+        </div>
+
+    </div>
+
+    <div class="play-field">
+        <div class="racket player-1"></div>
+
+        <div class="ball"></div>
+
+        <div class="racket player-2"></div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
